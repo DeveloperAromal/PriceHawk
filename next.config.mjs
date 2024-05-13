@@ -6,6 +6,8 @@ const nextConfig = {
       "rukminim2.flixcart.com",
       "main--ecommercehack.netlify.app",
       "ecommercehack.netlify.app",
+      "pbs.twimg.com",
+      "w7.pngwing.com",
     ],
   },
 };
