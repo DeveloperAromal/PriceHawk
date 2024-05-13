@@ -34,9 +34,9 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   return (
-    <section className="pb-4">
+    <section className="">
       <div>
-        <nav className="backdrop-blur-md backdrop-brightness-40 h-20 w-full top-0 left-0 right-0 lg:flex lg:justify-between lg:items-center fixed z-50">
+        <nav className=" h-20 w-full top-0 left-0 right-0 lg:flex lg:justify-between lg:items-center fixed z-50">
           <div className="flex justify-between items-center">
             <Link href="/home">
               <div className="cursor-pointer ">
@@ -44,9 +44,9 @@ export default function Navbar() {
                   <Image
                     src="/assets/logo.png"
                     alt="logo"
-                    width={78}
-                    height={78}
-                    className="hidden lg:block pt-4"
+                    width={75}
+                    height={75}
+                    className="hidden lg:block pl-5"
                   />
                 </div>
                 <Image
@@ -62,24 +62,20 @@ export default function Navbar() {
               <div className="pt-4 flex z-60">
                 <button
                   onClick={toggleMenu}
-                  className="block lg:hidden z-50 px-3 rounded-2xl focus:outline-none"
-                >
+                  className="block lg:hidden z-50 px-3 rounded-2xl focus:outline-none">
                   <div className="relative">
                     <div
                       className={`w-8 h-0.5 bg-white mb-2 transition-all duration-300 ${
                         isMenuOpen ? "rotate-45 translate-y-4" : ""
-                      }`}
-                    ></div>
+                      }`}></div>
                     <div
                       className={`w-8 h-0.5 bg-white mb-2 transition-all duration-300 ${
                         isMenuOpen ? "opacity-0 translate-x-full" : ""
-                      }`}
-                    ></div>
+                      }`}></div>
                     <div
                       className={`w-8 h-0.5 bg-white transition-all duration-300 ${
                         isMenuOpen ? "-rotate-45 -translate-y-1" : ""
-                      }`}
-                    ></div>
+                      }`}></div>
                   </div>
                 </button>
               </div>
@@ -89,8 +85,7 @@ export default function Navbar() {
             <ul
               className={`${
                 isMenuOpen ? "block" : "hidden"
-              } lg:flex lg:items-center lg:justify-center lg:gap-10`}
-            >
+              } lg:flex lg:items-center lg:justify-center lg:gap-10`}>
               <div className="flex gap-10 pr-36 pt-2">
                 <NavItem href="/home">Home</NavItem>
                 <NavItem href="/about">About</NavItem>
@@ -99,16 +94,16 @@ export default function Navbar() {
                 <NavItem href="/contact">Contact</NavItem>
                 <div className="absolute right-8 top-4">
                   <div className="flex">
-                  <div>
-                    <Button
-                      href="/auth/v1/login"
-                      title="LOGIN"
-                      className="bg-transparent py-3 px-5 text-lg"
-                    />
-                  </div>
-                  <div>
-                    <Button href="/auth/v1/signup" title="SIGN UP" />
-                  </div>
+                    <div>
+                      <Button
+                        href="/auth/v1/login"
+                        title="Login"
+                        className="bg-transparent py-3 px-5 text-base"
+                      />
+                    </div>
+                    <div>
+                      <Button href="/auth/v1/signup" title="Sign Up" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,8 +113,7 @@ export default function Navbar() {
             <ul
               className={`${
                 isMenuOpen ? "block" : "hidden"
-              } bg-black relative -top-20 w-full h-screen flex items-center justify-center`}
-            >
+              } bg-black relative -top-20 w-full h-screen flex items-center justify-center`}>
               <div className=" block lg:hidden bg-black z-20">
                 <div className="flex items-center justify-center pb-2">
                   <div>
@@ -132,14 +126,14 @@ export default function Navbar() {
                 </div>
                 <div className="flex gap-2">
                   <div className="pb-4 ">
-                  <div>
-                    <Button href="/auth/v1/login" title="Login" />
-                  </div>
+                    <div>
+                      <Button href="/auth/v1/login" title="Login" />
+                    </div>
                   </div>
                   <div className="pb-4 ">
-                  <div>
-                    <Button href="/auth/v1/signup" title="Sign up" />
-                  </div>
+                    <div>
+                      <Button href="/auth/v1/signup" title="Sign up" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -153,7 +147,7 @@ export default function Navbar() {
 
 function NavItem({ href, children }: Nav) {
   return (
-    <li className="text-lg md:text-lg text-white hover:text-emerald-600 cursor-pointer">
+    <li className="text-base md:text-base text-white hover:text-emerald-600 cursor-pointer">
       <Link href={href}>{children}</Link>
     </li>
   );
