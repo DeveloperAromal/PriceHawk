@@ -1,20 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "/api/cron",
-        "use": "@now/node-server"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/cron",
-        "methods": ["GET", "POST"],
-        "dest": "/api/cron"
-      }
-    ],
-    "cron": "*/1 * * * *"
-  }
-  
-
-  
+  "crons": [
+    {
+      "path": "/api/every-minute",
+      "schedule": "* * * * *"
+    }
+  ]
+}
