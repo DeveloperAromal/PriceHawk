@@ -1,7 +1,4 @@
 import { FC } from "react";
-// import { useForm } from "react-hook-form";
-// import { sendEmail } from "../../../../utils/track-send-email";
-
 export type TrackProps = {
   onClick?: () => void;
 };
@@ -15,7 +12,7 @@ const Track: FC<TrackProps> = ({ onClick }) => {
           Track this product
         </h1>
         <p className="text-center text-teal-600 mb-6 text-md">
-          We continuously track this product, and when the price drops, we'll
+          We continuously track this product, and when the price drops, we&apos;ll
           inform you through both email and SMS.
         </p>
 

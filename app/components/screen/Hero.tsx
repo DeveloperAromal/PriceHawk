@@ -3,8 +3,6 @@
 import Navbar from "../includes/Navbar";
 import "@fontsource/dancing-script";
 import { Spotlight } from "../ui/Spotlight";
-import { cn } from "@/utils/cn";
-
 export default function Hero() {
   return (
     <>
@@ -19,7 +17,7 @@ export default function Hero() {
             Cure depression by Tracking.
           </h1>
           <p className="mt-8 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-            With PriceHawk, you don't have to worry about the price of the
+            With PriceHawk, you don&apos;t have to worry about the price of the
             products. You can just make the right deal at the right time.
           </p>
         </div>
