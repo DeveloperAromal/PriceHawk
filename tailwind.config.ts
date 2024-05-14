@@ -7,10 +7,24 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    borderWidth: {
+      DEFAULT: "1px",
+      "0": "0",
+      "1": "1px",
+      "2": "2px",
+      "3": "3px",
+      "4": "4px",
+      "6": "6px",
+      "8": "8px",
+    },
     extend: {
+      width: {
+        "045803489": "94%",
+      },
       colors: {
         "regal-black": "#000",
         "unknown-black": "#070707",
+        "darky-shade": "#b0b0b0",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -29,6 +43,14 @@ const config: Config = {
           "100%": {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
           },
         },
       },
