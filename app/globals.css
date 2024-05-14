@@ -2,84 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
+.bottom_section {
+  position: relative;
+  /* background-image: url("./../public/world_map.svg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
 .background {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .w-100 {
-    width: 450px;
+  width: 450px;
 }
 
 .h-100 {
-    height: 480px;
+  height: 480px;
 }
 
 .shad {
-    box-shadow: 0px 0px 20px #40c6c4;
+  box-shadow: 0px 0px 20px #40c6c4;
 }
 
 .shad:hover {
-    box-shadow: 0px 0px 30px #40c6c4;
+  box-shadow: 0px 0px 30px #40c6c4;
 }
 
 .text-cust {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .box-shad {
-    box-shadow: 0px 0px 30px #0adb8b;
+  box-shadow: 0px 0px 30px #0adb8b;
 }
 
 .blur {
-    filter: blur(100px);
+  filter: blur(100px);
 }
 
 .box-shad-teal {
-    box-shadow: 0px 0px 20px #00d889;
+  box-shadow: 0px 0px 20px #00d889;
 }
 
-.backdrop-brightness-20{
-    backdrop-filter: brightness(.2);
+.backdrop-brightness-20 {
+  backdrop-filter: brightness(0.2);
 }
 @media (min-width: 350px) {
-    .xs\:text-2xl {
-        font-size: 30px;
-    }
+  .xs\:text-2xl {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 480px) {
-    .xs\:block {
-        display: block;
-    }
+  .xs\:block {
+    display: block;
+  }
 }
 
 @media (min-width: 480px) {
-    .xs\:pt-40 {
-        padding-top: 50px;
-    }
+  .xs\:pt-40 {
+    padding-top: 50px;
+  }
 }
 
 .pricing-shad-cyan-500 {
-    box-shadow: 5px 10px 40px #f90c6333;
+  box-shadow: 5px 10px 40px #f90c6333;
 }
 
 .pricing-shad-cyan-700 {
-    box-shadow: 0px 0px 10px #36045052;
+  box-shadow: 0px 0px 10px #36045052;
 }
 
 .backdrop-brightness-40 {
-    --tw-backdrop-brightness: brightness(0.60);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  --tw-backdrop-brightness: brightness(0.6);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
 }
 
 ::-webkit-scrollbar {
-    width: 1px;
-
+  width: 1px;
 }
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-  }
-  
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}

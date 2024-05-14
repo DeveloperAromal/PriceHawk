@@ -13,6 +13,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.6",
     "@supabase/auth-helpers-nextjs": "^0.10.0",
     "@supabase/supabase-js": "^2.43.1",
     "@tabler/icons-react": "^3.3.0",
@@ -39,6 +41,8 @@
     "sharp": "^0.33.3",
     "stripe": "^15.6.0",
     "tailwind-merge": "^2.3.0",
+    "three": "^0.164.1",
+    "three-globe": "^2.31.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
